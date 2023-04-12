@@ -207,20 +207,11 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              class="text-white bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
             >
               Submit
             </button>
           </div>
-          {/* <iframe
-            class="airtable-embed"
-            src="https://airtable.com/embed/shr96jsp0jbX3kboH?backgroundColor=cyan"
-            frameborder="0"
-            onmousewheel=""
-            width="100%"
-            height="533"
-            style={{ background: 'transparent', border: '1px solid #ccc' }}
-          ></iframe> */}
         </form>
       </div>
     </Layout>

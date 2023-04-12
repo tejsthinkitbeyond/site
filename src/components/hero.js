@@ -1,5 +1,5 @@
-import Link from 'next/Link';
-import Image from 'next/Image';
+import Link from 'next/link';
+import Image from 'next/image';
 import heroImage from '../assets/hero.png';
 import Circle from '../assets/circle2-orange.svg';
 import Dots from '../assets/dots2-purple.svg';
