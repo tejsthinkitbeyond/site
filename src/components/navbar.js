@@ -1,47 +1,20 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { menuitems } from '@/utils/data';
 
 export const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const { pathname } = useRouter();
-  console.log(pathname);
-  const menuitems = [
-    // {
-    //   title: "Home",
-    //   path: "#",
-    //   // This is for dropdown. Uncomment this to enable dropdown
-    //   // children: [
-    //   //   { title: "Action", path: "#" },
-    //   //   { title: "Another action", path: "#" },
-    //   //   { title: "Dropdown Submenu", path: "#" },
-    //   // ],
-    // },
-    {
-      title: 'Services',
-      path: '/services',
-    },
-    {
-      title: 'About Us',
-      path: '/about',
-    },
-    // {
-    //   title: "Blog",
-    //   path: "/blog",
-    // },
-  ];
+
   return (
-    <header
-      className="flex flex-col lg:flex-row justify-between items-center my-5 md:py-4 md:my-0 w-full px-8 md:px-24"
-      //   x-data="{ open: false }"
-      //   x-init="$watch('open', value => console.log(value))"
-    >
+    <header className="flex flex-col lg:flex-row justify-between items-center my-5 md:py-4 md:my-0 w-full px-8 md:px-24">
       <div className="flex w-full lg:w-auto items-baseline justify-between">
-        <a href="/" className="text-4xl">
+        <Link href="/" className="text-4xl">
           <span className="text-green-400">Think</span>
           <span className="font-bold text-slate-800">IT</span>
           <span className="text-green-400">Beyond</span>
-        </a>
+        </Link>
         <div className="block lg:hidden">
           <button
             onClick={() => setNavbarOpen(!navbarOpen)}
@@ -87,14 +60,6 @@ export const Navbar = () => {
         <ul className="flex flex-col lg:flex-row lg:gap-3">
           {menuitems.map((item, index) => (
             <>
-              {item.children && (
-                <Dropdown
-                  title={item.title}
-                  children={item.children}
-                  lastItem={index === menuitems.length - 1}
-                />
-              )}
-
               {!item.children && (
                 <li>
                   <a
