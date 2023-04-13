@@ -4,7 +4,7 @@ import SignOff from '../../public/assets/signOff.svg';
 import Development from '../../public/assets/development.svg';
 import FSD from '../../public/assets/FSD.svg';
 import Cloud from '../../public/assets/cloud.svg';
-import Design from '../../public/assets/design.svg';
+import Design from '../../public/assets/write.svg';
 import Product from '../../public/assets/Product_Design.svg';
 import FullStack from '../../public/assets/Full_Stack.svg';
 import Devops from '../../public/assets/Devops.svg';

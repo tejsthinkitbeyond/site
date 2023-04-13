@@ -43,7 +43,7 @@ export const Hero = () => {
           Our personalized consulting services guide you through the launch
           process and beyond.
         </p>
-        <div className="mt-6 flex flex-col sm:flex-row gap-3">
+        <div className="mt-6 flex flex-col sm:flex-row gap-3 items-start">
           <Link
             href="/contact"
             rel="noopener"

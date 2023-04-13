@@ -58,7 +58,7 @@ export const Navbar = () => {
         x-transition
       >
         <ul className="flex flex-col lg:flex-row lg:gap-3">
-          {menuitems.map((item, index) => (
+          {menuitems.map((item) => (
             <>
               {!item.children && (
                 <li>
@@ -77,7 +77,9 @@ export const Navbar = () => {
           <Link
             href="/contact"
             className={`${
-              !pathname.match(/^\/contact$/) ? 'visible' : 'invisible'
+              !pathname.match(/^\/contact$/)
+                ? 'block md:visible'
+                : 'hidden md:invisible'
             } bg-green-400 text-white text-xl hover:bg-green-600 border-2 border-transparent rounded-md px-4 py-2 w-full text-center`}
           >
             Contact Us

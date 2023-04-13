@@ -22,6 +22,7 @@ export default function Contact() {
   const [emailError, setEmailError] = useState('');
   const [organizationError, setOrganizationError] = useState('');
   const [enquiryError, setEnquiryError] = useState('');
+  const [showToast, setShowToast] = useState(false);
   //   const [errors, setErrors] = useState({
   //     nameError: '',
   //     emailError: '',
@@ -60,9 +61,10 @@ export default function Contact() {
         body: JSON.stringify(contact),
         headers: { 'Content-Type': 'application/json' },
       });
-      const newItem = await res.json();
-      console.log(newItem);
-      //   then we will update the 'items' adding the newly added item to it
+      setShowToast(true);
+      setTimeout(() => {
+        setShowToast(false);
+      }, 5000);
       setUserData({});
     } catch (error) {
       console.error(error);
@@ -86,7 +88,7 @@ export default function Contact() {
 
   return (
     <Layout>
-      <div className="grid md:grid-cols-2 items-center gap-10 mx-auto mt-16 px-8 md:px-24 bg-hero">
+      <div className="grid md:grid-cols-2 items-center gap-10 mx-auto md:mt-16 mt-10 px-8 md:px-24 bg-hero">
         <div>
           <h2 className="font-medium text-4xl text-gray-800">
             Contact ThinkItBeyond
@@ -119,7 +121,7 @@ export default function Contact() {
           </div>
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="px-4 pt-4 bg-slate-50 rounded-md flex flex-col md:ml-auto w-full md:py-8 md:mt-0">
+          <div className="px-4 pt-4 bg-slate-100 rounded-md flex flex-col md:ml-auto w-full md:py-8 md:mt-0">
             <p className="leading-relaxed mb-5 text-gray-600">
               Share your details below so we can reach out to you!
             </p>
@@ -210,12 +212,39 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="text-white bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              className="text-white bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg mb-4 md:mb-0"
             >
               Submit
             </button>
           </div>
         </form>
+      </div>
+
+      <div className={`${showToast ? 'flex' : 'hidden'}  justify-center`}>
+        <div
+          id="toast-simple"
+          className="flex items-center my-4 w-full border border-green-500 max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800"
+          role="alert"
+        >
+          <svg
+            aria-hidden="true"
+            className="w-5 h-5 text-green-600 dark:text-green-500"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="paper-plane"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M511.6 36.86l-64 415.1c-1.5 9.734-7.375 18.22-15.97 23.05c-4.844 2.719-10.27 4.097-15.68 4.097c-4.188 0-8.319-.8154-12.29-2.472l-122.6-51.1l-50.86 76.29C226.3 508.5 219.8 512 212.8 512C201.3 512 192 502.7 192 491.2v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96l-293.7 264.3L19.69 317.5C8.438 312.8 .8125 302.2 .0625 289.1s5.469-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"
+            ></path>
+          </svg>
+          <div className="pl-4 text-sm font-normal">
+            Thank you for your enquiry. We'll get back to you ASAP.
+          </div>
+        </div>
       </div>
     </Layout>
   );

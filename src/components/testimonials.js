@@ -12,7 +12,7 @@ export const Testimonials = () => {
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.name}
-                className="lg:mb-0  bg-white mx-4 p-8 shadow-md transform hover:-translate-y-3 ease-in duration-500"
+                className="lg:mb-0  bg-white mx-4 p-8 shadow-md transform hover:-translate-y-3 ease-in duration-500 mb-4 md:mb-0"
               >
                 <div className="h-full text-center flex flex-col items-center justify-between">
                   <p className="leading-relaxed">{testimonial.content}</p>
