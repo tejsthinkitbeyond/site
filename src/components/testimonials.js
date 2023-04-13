@@ -17,7 +17,7 @@ export const Testimonials = () => {
                 <div className="h-full text-center flex flex-col items-center justify-between">
                   <p className="leading-relaxed">{testimonial.content}</p>
                   <div>
-                    <span className="inline-block h-1 w-10 rounded bg-green-400 mt-6 mb-4" />
+                    <span className="inline-block h-1 w-10 rounded bg-primary mt-6 mb-4" />
                     <h2 className="text-gray-900 text-sm">
                       {testimonial.name}
                     </h2>

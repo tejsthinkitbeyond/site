@@ -5,8 +5,8 @@ import { services } from '@/utils/data';
 export default function Services() {
   return (
     <Layout>
-      <div className="mt-16 text-center">
-        <h1 className="text-6xl font-bold lg:tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600">
+      <div className="mt-8 md:mt-0 text-center">
+        <h1 className="text-6xl font-bold lg:tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
           Services
         </h1>
       </div>

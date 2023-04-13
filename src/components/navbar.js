@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import Logo from '../../public/logo.png';
 import { useRouter } from 'next/router';
 import { menuitems } from '@/utils/data';
 
@@ -9,11 +11,18 @@ export const Navbar = () => {
 
   return (
     <header className="flex flex-col lg:flex-row justify-between items-center my-5 md:py-4 md:my-0 w-full px-8 md:px-24">
-      <div className="flex w-full lg:w-auto items-baseline justify-between">
+      <div className="flex w-full lg:w-auto items-center justify-between">
         <Link href="/" className="text-4xl">
-          <span className="text-green-400">Think</span>
+          {/* <span className="text-green-400">Think</span>
           <span className="font-bold text-slate-800">IT</span>
-          <span className="text-green-400">Beyond</span>
+          <span className="text-green-400">Beyond</span> */}
+          <Image
+            src={Logo}
+            alt="ThinkITBeyond logo"
+            loading="eager"
+            format="avif"
+            className="w-64"
+          />
         </Link>
         <div className="block lg:hidden">
           <button
@@ -52,7 +61,7 @@ export const Navbar = () => {
         </div>
       </div>
       <nav
-        className={`w-full lg:w-auto mt-2 lg:flex lg:mt-0  py-4 md:py-0 ${
+        className={`w-full lg:w-auto lg:flex lg:mt-0   md:py-0 ${
           navbarOpen ? 'block' : 'hidden'
         }`}
         x-transition
@@ -80,7 +89,7 @@ export const Navbar = () => {
               !pathname.match(/^\/contact$/)
                 ? 'block md:visible'
                 : 'hidden md:invisible'
-            } bg-green-400 text-white text-xl hover:bg-green-600 border-2 border-transparent rounded-md px-4 py-2 w-full text-center`}
+            } bg-primary text-white text-xl hover:bg-green-600 border-2 border-transparent rounded-md px-4 py-2 w-full text-center`}
           >
             Contact Us
           </Link>
@@ -92,7 +101,7 @@ export const Navbar = () => {
             href="/contact"
             className={`${
               !pathname.match(/^\/contact$/) ? 'visible' : 'invisible'
-            } bg-green-400 text-white text-xl hover:bg-green-600 border-2 border-transparent rounded-md px-4 py-2`}
+            } bg-primary text-white text-xl hover:bg-green-600 border-2 border-transparent rounded-md px-4 py-2`}
           >
             Contact Us
           </Link>

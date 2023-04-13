@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#01cb8a',
+        secondary: '#009786',
+      },
       backgroundImage: {
         hero: "url('/pattern-white.svg')",
       },

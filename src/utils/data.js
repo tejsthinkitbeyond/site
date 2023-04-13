@@ -12,7 +12,7 @@ import Devops from '../../public/assets/Devops.svg';
 export const testimonials = [
   {
     name: 'Hany Elgabry',
-    title: 'Product Manager',
+    title: 'Project Manager',
     content:
       'Krishna was friendly through the whole session and he has good experience in Java. I am satisfied with the support provided by him, and I would recommend him for any quick and deep code review or walkthrough.',
   },

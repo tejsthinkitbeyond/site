@@ -4,13 +4,13 @@ import Link from 'next/link';
 export default function About() {
   return (
     <Layout>
-      <div className="mt-16 text-center">
-        <h1 className="text-6xl font-bold lg:tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600">
+      <div className="mt-8 md:mt-0 text-center">
+        <h1 className="text-6xl font-bold lg:tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
           About Us
         </h1>
       </div>
 
-      <div className="gap-3 mx-auto mt-16  px-8 md:px-24 bg-hero">
+      <div className="gap-3 mx-auto mt-8  px-8 md:px-24 bg-hero">
         <p className="text-center md:text-left text-lg leading-relaxed text-gray-700">
           We deliver innovative and reliable IT solutions that help businesses
           achieve their goals and improve their operations while building
@@ -42,7 +42,7 @@ export default function About() {
           <Link
             href="/contact"
             rel="noopener"
-            className="bg-green-400 text-white text-xl hover:bg-green-600 border-2 border-transparent rounded-md px-4 py-2"
+            className="bg-primary text-white text-xl hover:bg-green-600 border-2 border-transparent rounded-md px-4 py-2"
           >
             Contact Us
           </Link>

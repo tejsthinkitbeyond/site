@@ -36,7 +36,7 @@ export const Hero = () => {
         {/* <img src={Dots.src} className="absolute bottom-0 right-0 h-20" /> */}
       </div>
       <div>
-        <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600">
+        <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
           Dedicated to bringing your ideas to life
         </h1>
         <p className="text-lg mt-4 text-slate-600 max-w-xl">
@@ -47,7 +47,7 @@ export const Hero = () => {
           <Link
             href="/contact"
             rel="noopener"
-            className="bg-green-400 text-white text-xl hover:bg-green-600 border-2 border-transparent rounded-md px-4 py-2"
+            className="bg-primary text-white text-xl hover:bg-green-600 border-2 border-transparent rounded-md px-4 py-2"
           >
             Contact Us
           </Link>

@@ -212,7 +212,7 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="text-white bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg mb-4 md:mb-0"
+              className="text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-secondary rounded text-lg mb-4 md:mb-0"
             >
               Submit
             </button>
@@ -220,15 +220,15 @@ export default function Contact() {
         </form>
       </div>
 
-      <div className={`${showToast ? 'flex' : 'hidden'}  justify-center`}>
+      <div className={`${true ? 'flex' : 'hidden'}  justify-center`}>
         <div
           id="toast-simple"
-          className="flex items-center my-4 w-full border border-green-500 max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800"
+          className="flex items-center my-4 w-full border border-secondary max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800"
           role="alert"
         >
           <svg
             aria-hidden="true"
-            className="w-5 h-5 text-green-600 dark:text-green-500"
+            className="w-5 h-5 text-primary dark:text-secondary"
             focusable="false"
             data-prefix="fas"
             data-icon="paper-plane"
@@ -242,7 +242,7 @@ export default function Contact() {
             ></path>
           </svg>
           <div className="pl-4 text-sm font-normal">
-            Thank you for your enquiry. We'll get back to you ASAP.
+            Thank you for your enquiry. We&apos;ll get back to you ASAP.
           </div>
         </div>
       </div>
