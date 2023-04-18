@@ -8,9 +8,9 @@ export const CTA = () => {
         </span>
       </h2>
       <p className="text-slate-400 mt-4 text-lg md:text-xl">
-        We are here to help. Our expert consulting services and commitment to
-        delivering top-quality solutions empower you to succeed and bring your
-        business to the next level.
+        Boost your success with our expert AI consulting. We help businesses
+        increase revenue and drive growth through the latest in artificial
+        intelligence technology, all with fast delivery times.
       </p>
     </div>
   );
