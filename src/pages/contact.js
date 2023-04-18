@@ -122,9 +122,9 @@ export default function Contact() {
         </div>
         <form onSubmit={handleSubmit}>
           <div className="px-4 pt-4 bg-slate-100 rounded-md flex flex-col md:ml-auto w-full md:py-8 md:mt-0">
-            <p className="leading-relaxed mb-5 text-gray-600">
+            <h3 className="leading-relaxed mb-5 text-gray-600 text-xl font-bold">
               Share your details below so we can reach out to you!
-            </p>
+            </h3>
             <div className="relative mb-4">
               <label htmlor="name" className="leading-7 text-sm text-gray-600">
                 Name
