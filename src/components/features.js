@@ -3,7 +3,7 @@ import { features } from '@/utils/data';
 export const Features = () => {
   return (
     <div className="px-8 md:px-24 bg-slate-100 py-10">
-      <div class="md:mt-16 md:mt-0">
+      <div class="md:mt-0">
         <div class="flex items-center">
           <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-gray-700">
             How We Work

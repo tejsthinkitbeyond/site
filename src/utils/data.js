@@ -14,13 +14,13 @@ export const testimonials = [
     name: 'Hany Elgabry',
     title: 'Project Manager',
     content:
-      'Krishna was friendly through the whole session and he has good experience in Java. I am satisfied with the support provided by him, and I would recommend him for any quick and deep code review or walkthrough.',
+      'They were very friendly through the whole session and he has good experience in Java. I am satisfied with the support provided by him, and I would recommend him for any quick and deep code review or walkthrough.',
   },
   {
     name: 'Chris Smith',
     title: 'Special Projects Director',
     content:
-      'Krishna is very organized and very keen on understanding the project. He delivered exactly what I needed and even figured out a very complicated integration.',
+      'They are very organized and very keen on understanding the project. He delivered exactly what I needed and even figured out a very complicated integration.',
   },
   {
     name: 'Jerry L',
