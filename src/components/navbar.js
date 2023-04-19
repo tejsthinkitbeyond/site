@@ -13,9 +13,6 @@ export const Navbar = () => {
     <header className="flex flex-col lg:flex-row justify-between items-center my-5 md:py-4 md:my-0 w-full px-8 md:px-24">
       <div className="flex w-full lg:w-auto items-center justify-between">
         <Link href="/" className="text-4xl">
-          {/* <span className="text-green-400">Think</span>
-          <span className="font-bold text-slate-800">IT</span>
-          <span className="text-green-400">Beyond</span> */}
           <Image
             src={Logo}
             alt="ThinkITBeyond logo"
@@ -73,7 +70,7 @@ export const Navbar = () => {
                 <li>
                   <a
                     href={item.path}
-                    className="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
+                    className="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900 font-bold uppercase"
                   >
                     {item.title}
                   </a>
